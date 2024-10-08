@@ -8,7 +8,20 @@
  * defined and by using a global variable.
  */
 
-int main(void) {
-  printf("Hello World\n");
+int n = 0;
+
+int foo(int value)
+{
+  n = value;
+  return n;
+}
+
+int main(void)
+{
+  printf("%d\n", n);
+  foo(100);
+  printf("%d\n", n);
+  foo(42);
+  printf("%d\n", n);
   return 0;
 }
