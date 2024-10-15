@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /*
  * Modify the function below so that it prints out each character in the string
@@ -6,7 +7,10 @@
  */
 
 void printCharsInString(char string[]){
-  printf("%s\n", string);
+    int len = strlen(string);
+    for (int i = 0; i < len; i++) {
+        printf("%c\n", string[i]);
+    }
 }
 
 int main(void) {

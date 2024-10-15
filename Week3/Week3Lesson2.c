@@ -12,11 +12,19 @@ int evenNumbers[10];
 
 void populateArray(){
   for(int i=0; i<evenNumbersSize; i++){
-    printf("%d\n", ((i+1)*2));
+    int val = (i+1) * 2;
+    evenNumbers[i] = val;
   }
+}
+
+void printArray() {
+    for (int i = 0; i < evenNumbersSize; i++) {
+        printf("%d\n", evenNumbers[i]);
+    }
 }
 
 int main(void) {
   populateArray();
+  printArray();
   return 0;
 }
