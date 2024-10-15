@@ -15,7 +15,11 @@ struct Date
 };
 
 void printDate(struct Date d){
-  
+    printf("%02d", d.day);
+    printf(":");
+    printf("%s", d.month);
+    printf(":");
+    printf("%i\n", d.year);
 }
 
 int main(void) {

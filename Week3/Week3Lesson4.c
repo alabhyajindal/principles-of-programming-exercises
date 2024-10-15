@@ -9,9 +9,13 @@
 char string2[11];
 
 void copyAndPrintArray(char string1[]){
-  strcpy(string2, string1);
-  printf("%s\n", string2);
+    strcpy(string2, string1);
+    int len = strlen(string2);
+    for (int i = len; i >= 0; i--) {
+        printf("%c", string2[i]);
+    }
 }
+
 
 int main(void) {
   char string1[11] = "my message";
